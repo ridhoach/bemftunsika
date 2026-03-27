@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEM FT UNSIKA 2026 | Bersatu, Tegar, Mandiri</title>
     <link rel="icon" type="image/png" href="./assets/logo-bem.png">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -45,53 +48,27 @@
             }
         }
     </script>
-    <style>
-        .hero-pattern {
-            background-color: #0B132B;
-            background-image: radial-gradient(circle at top right, rgba(58, 80, 107, 0.4), transparent 40%),
-                              radial-gradient(circle at bottom left, rgba(244, 162, 97, 0.15), transparent 40%),
-                              linear-gradient(rgba(11, 19, 43, 0.95), rgba(11, 19, 43, 0.95)), 
-                              url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjUwoRwTWCpTTKewU4SpQxA0VngsGqklixrzQSFhJ81FEpxAobfo0s-rasD_yLyT8sopyJSMPrR4uJJhPKAa9kH2LrrBcAB-eAvvUo7SNs4xJDwtZKEYQCB3jIbpqDRoi1KxiBntJ6BOhk7JNv2eWHaT0uRSTbq-NQe6ImnnyV8mkpS2SPZW4HX3cQqfU/s4000/WhatsApp%20Image%202024-11-21%20at%2012.08.45%20(2).jpeg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        .nav-scrolled {
-            background-color: rgba(11, 19, 43, 0.85);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
-        }
-        /* Custom scrollbar for modern feel */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f5f9; }
-        ::-webkit-scrollbar-thumb { background: #3A506B; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #1C2541; }
-    </style>
 </head>
-<body class="font-sans text-gray-800 bg-slate-50 antialiased selection:bg-ftgold-500 selection:text-ftnavy-900 overflow-x-hidden">
+<body class="font-sans text-gray-800 bg-slate-50 antialiased selection:bg-ftgold-500 selection:text-ftnavy-900 overflow-x-hidden select-none">
 
-    <!-- Navigation -->
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 bg-transparent text-white py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center bg-ftnavy-900/40 backdrop-blur-md rounded-full px-6 py-3 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
-                <a href="/home" class="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity duration-300">
+                <a href="#" onclick="navigateTo('page-beranda'); return false;" class="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity duration-300">
                     <img src="./assets/logo-bem.png" alt="Logo BEM FT UNSIKA" class="w-10 h-10 object-contain drop-shadow-md">
                     <span class="font-bold text-xl tracking-tight">BEM FT UNSIKA <span class="text-ftgold-500">2026</span></span>
                 </a>
                 
-                <!-- Desktop Menu -->
                 <div class="hidden lg:flex space-x-1">
-                    <a href="/home" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Beranda</a>
-                    <a href="/tentang" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Tentang</a>
-                    <a href="/kabinet" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Kabinet</a>
-                    <a href="/program" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Program</a>
-                    <a href="/repositori" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Repositori</a>
-                    <a href="/prestasi" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Prestasi</a>
-                    <a href="/kontak" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Kontak</a>
+                    <a href="#" onclick="navigateTo('page-beranda'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Beranda</a>
+                    <a href="#" onclick="navigateTo('page-tentang'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Tentang</a>
+                    <a href="#" onclick="navigateTo('page-kabinet'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Kabinet</a>
+                    <a href="#" onclick="navigateTo('page-program'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Program</a>
+                    <a href="#" onclick="navigateTo('page-repositori'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Repositori</a>
+                    <a href="#" onclick="navigateTo('page-prestasi'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Prestasi</a>
+                    <a href="#" onclick="navigateTo('page-kontak'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Kontak</a>
                 </div>
 
-                <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-ftgold-500 hover:text-ftnavy-900 transition-colors focus:outline-none">
                         <i class="fas fa-bars"></i>
@@ -100,27 +77,23 @@
             </div>
         </div>
         
-        <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden md:hidden absolute w-[calc(100%-2rem)] left-4 mt-4 bg-ftnavy-900/95 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 origin-top h-max max-h-[80vh] overflow-y-auto">
             <div class="px-4 py-6 space-y-1">
-                <a href="/home" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Beranda</a>
-                <a href="/tentang" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Tentang</a>
-                <a href="/kabinet" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Kabinet</a>
-                <a href="/program" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Program</a>
-                <a href="/repositori" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Repositori Akademik</a>
-                <a href="/prestasi" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Dashboard Prestasi</a>
-                <a href="/kontak" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Kontak</a>
+                <a href="#" onclick="navigateTo('page-beranda'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Beranda</a>
+                <a href="#" onclick="navigateTo('page-tentang'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Tentang</a>
+                <a href="#" onclick="navigateTo('page-kabinet'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Kabinet</a>
+                <a href="#" onclick="navigateTo('page-program'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Program</a>
+                <a href="#" onclick="navigateTo('page-repositori'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Repositori Akademik</a>
+                <a href="#" onclick="navigateTo('page-prestasi'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Dashboard Prestasi</a>
+                <a href="#" onclick="navigateTo('page-kontak'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Kontak</a>
             </div>
         </div>
     </nav>
 
-    <!-- Main Container for JS Routing -->
     <main id="main-content" class="pt-0">
         
-        <!-- ================= BERANDA PAGE ================= -->
         <div id="page-beranda" class="page-view block">
             <section class="hero-pattern min-h-screen flex items-center relative overflow-hidden pt-20">
-                <!-- Decorative blobs -->
                 <div class="absolute top-1/4 left-10 w-64 h-64 bg-ftnavy-700/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-float"></div>
                 <div class="absolute bottom-1/4 right-10 w-80 h-80 bg-ftgold-500/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-float" style="animation-delay: 2s;"></div>
 
@@ -139,10 +112,10 @@
                             [Can be edited: BEM FT Unsika 2026 hadir sebagai katalisator pergerakan mahasiswa yang progresif, adaptif, dan berdampak nyata].
                         </p>
                         <div class="flex flex-col sm:flex-row gap-5 justify-center">
-                            <a href="/tentang" class="px-8 py-4 bg-gradient-to-r from-ftgold-500 to-ftgold-400 text-ftnavy-900 font-bold rounded-full hover:scale-105 transition-all duration-300 shadow-[0_10px_40px_-10px_rgba(244,162,97,0.8)] text-center">
+                            <a href="#" onclick="navigateTo('page-tentang'); return false;" class="px-8 py-4 bg-gradient-to-r from-ftgold-500 to-ftgold-400 text-ftnavy-900 font-bold rounded-full hover:scale-105 transition-all duration-300 shadow-[0_10px_40px_-10px_rgba(244,162,97,0.8)] text-center">
                                 Visi & Misi
                             </a>
-                            <a href="/program" class="px-8 py-4 bg-white/5 backdrop-blur-md border border-white/20 text-white font-bold rounded-full hover:bg-white/10 hover:border-white/40 hover:scale-105 transition-all duration-300 text-center">
+                            <a href="#" onclick="navigateTo('page-program'); return false;" class="px-8 py-4 bg-white/5 backdrop-blur-md border border-white/20 text-white font-bold rounded-full hover:bg-white/10 hover:border-white/40 hover:scale-105 transition-all duration-300 text-center">
                                 Program Kerja
                             </a>
                         </div>
@@ -151,10 +124,8 @@
             </section>
         </div>
 
-        <!-- ================= TENTANG PAGE ================= -->
         <div id="page-tentang" class="page-view hidden">
             <section class="py-24 md:py-32 bg-slate-50 min-h-screen relative overflow-hidden">
-                <!-- Background decorative elements -->
                 <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-blue-50/50 to-transparent -skew-x-12 transform origin-top"></div>
                 
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -165,7 +136,6 @@
                     </div>
                     
                     <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-                        <!-- Visi Card -->
                         <div class="lg:col-span-5 animate-fade-in-up" style="animation-delay: 0.1s;">
                             <div class="bg-gradient-to-br from-ftnavy-900 to-ftnavy-800 p-10 md:p-12 rounded-[2.5rem] shadow-[0_20px_50px_-12px_rgba(11,19,43,0.5)] relative overflow-hidden text-white sticky top-32 group hover:shadow-[0_30px_60px_-15px_rgba(11,19,43,0.6)] transition-all duration-500">
                                 <div class="absolute -right-6 -top-6 w-48 h-48 bg-white/5 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
@@ -179,7 +149,6 @@
                             </div>
                         </div>
                         
-                        <!-- Misi List -->
                         <div class="lg:col-span-7 space-y-6 animate-fade-in-up" style="animation-delay: 0.2s;">
                             <h3 class="text-2xl font-bold text-ftnavy-900 mb-8 px-4">Misi Kabinet</h3>
                             
@@ -213,7 +182,6 @@
             </section>
         </div>
 
-        <!-- ================= KABINET PAGE ================= -->
         <div id="page-kabinet" class="page-view hidden">
             <section class="py-24 md:py-32 bg-slate-100 min-h-screen">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -224,7 +192,6 @@
                         <p class="text-slate-600 max-w-2xl mx-auto text-lg">Motor penggerak BEM FT UNSIKA 2026 yang diisi oleh individu berdedikasi.</p>
                     </div>
 
-                    <!-- Box Office -->
                     <div class="mb-20 animate-fade-in-up" style="animation-delay: 0.1s;">
                         <h3 class="text-xl font-bold text-center text-ftnavy-900 mb-10 uppercase tracking-[0.2em]">Box Office</h3>
                         <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
@@ -237,10 +204,8 @@
                         </div>
                     </div>
 
-                    <!-- Bidang-bidang -->
                     <h3 class="text-xl font-bold text-center text-ftnavy-900 mb-10 uppercase tracking-[0.2em] animate-fade-in-up" style="animation-delay: 0.2s;">Bidang-bidang</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up" style="animation-delay: 0.3s;">
-                        <!-- Custom Cards with fluid design -->
                         <div class="group bg-white rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(244,162,97,0.15)] p-8 transition-all duration-500 hover:-translate-y-2 border border-slate-100 relative overflow-hidden">
                             <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-slate-50 to-transparent rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
                             <div class="w-16 h-16 bg-gradient-to-br from-ftnavy-50 to-blue-50 text-ftnavy-900 rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-inner group-hover:bg-gradient-to-br group-hover:from-ftnavy-900 group-hover:to-ftnavy-700 group-hover:text-white transition-colors duration-500">
@@ -255,7 +220,7 @@
                             <div class="w-16 h-16 bg-gradient-to-br from-orange-50 to-amber-50 text-ftgold-500 rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-inner group-hover:bg-gradient-to-br group-hover:from-ftgold-500 group-hover:to-orange-400 group-hover:text-white transition-colors duration-500">
                                 <i class="fas fa-users-cog"></i>
                             </div>
-                            <h4 class="text-xl font-bold text-slate-900 mb-2">Pengembangan Sumber Daya Mahasiswa</h4>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Pengembangan SDM</h4>
                             <p class="text-sm text-slate-500 font-medium bg-slate-50 inline-block px-3 py-1 rounded-full">Kabid, Sekbid, Anggota</p>
                         </div>
 
@@ -264,7 +229,7 @@
                             <div class="w-16 h-16 bg-gradient-to-br from-ftnavy-50 to-blue-50 text-ftnavy-700 rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-inner group-hover:bg-gradient-to-br group-hover:from-ftnavy-900 group-hover:to-ftnavy-700 group-hover:text-white transition-colors duration-500">
                                 <i class="fas fa-microchip"></i>
                             </div>
-                            <h4 class="text-xl font-bold text-slate-900 mb-2">Penelitian dan Pengembangan Teknologi</h4>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Penelitian & Pengembangan</h4>
                             <p class="text-sm text-slate-500 font-medium bg-slate-50 inline-block px-3 py-1 rounded-full">Kabid, Sekbid, Anggota</p>
                         </div>
 
@@ -300,7 +265,7 @@
                             <div class="w-16 h-16 bg-gradient-to-br from-ftnavy-50 to-blue-50 text-ftnavy-900 rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-inner group-hover:bg-gradient-to-br group-hover:from-ftnavy-900 group-hover:to-ftnavy-700 group-hover:text-white transition-colors duration-500">
                                 <i class="fas fa-balance-scale"></i>
                             </div>
-                            <h4 class="text-xl font-bold text-slate-900 mb-2">Advokasi dan Kesejahteraan Mahasiswa</h4>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Advokasi & Kesejahteraan</h4>
                             <p class="text-sm text-slate-500 font-medium bg-slate-50 inline-block px-3 py-1 rounded-full">Kabid, Sekbid, Anggota</p>
                         </div>
 
@@ -309,7 +274,7 @@
                             <div class="w-16 h-16 bg-gradient-to-br from-ftnavy-50 to-blue-50 text-ftnavy-700 rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-inner group-hover:bg-gradient-to-br group-hover:from-ftnavy-900 group-hover:to-ftnavy-700 group-hover:text-white transition-colors duration-500">
                                 <i class="fas fa-leaf"></i>
                             </div>
-                            <h4 class="text-xl font-bold text-slate-900 mb-2">Sosial Masyarakat Lingkungan</h4>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Sosial Masyarakat</h4>
                             <p class="text-sm text-slate-500 font-medium bg-slate-50 inline-block px-3 py-1 rounded-full">Kabid, Sekbid, Anggota</p>
                         </div>
 
@@ -326,7 +291,6 @@
             </section>
         </div>
 
-        <!-- ================= PROGRAM PAGE ================= -->
         <div id="page-program" class="page-view hidden">
             <section class="py-24 md:py-32 bg-slate-50 min-h-screen">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -359,7 +323,6 @@
             </section>
         </div>
 
-        <!-- ================= REPOSITORI PAGE ================= -->
         <div id="page-repositori" class="page-view hidden">
             <section class="py-24 md:py-32 bg-slate-100 min-h-screen">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -370,7 +333,6 @@
                         <p class="text-slate-600 max-w-2xl mx-auto text-lg">Akses modul, bank soal, dan berkas kajian strategis BEM FT UNSIKA.</p>
                     </div>
 
-                    <!-- Search Bar -->
                     <div class="max-w-2xl mx-auto mb-12 animate-fade-in-up" style="animation-delay: 0.1s;">
                         <div class="relative group">
                             <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -380,7 +342,6 @@
                         </div>
                     </div>
 
-                    <!-- Filter Tags -->
                     <div class="flex flex-wrap justify-center gap-3 mb-12 animate-fade-in-up" style="animation-delay: 0.2s;">
                         <button class="px-5 py-2 rounded-full bg-ftnavy-900 text-white text-sm font-semibold shadow-md">Semua</button>
                         <button class="px-5 py-2 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-ftgold-500 hover:text-ftgold-500 text-sm font-semibold transition-colors">Bank Soal</button>
@@ -388,9 +349,7 @@
                         <button class="px-5 py-2 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-ftgold-500 hover:text-ftgold-500 text-sm font-semibold transition-colors">Kajian Strategis</button>
                     </div>
 
-                    <!-- Repository List -->
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in-up" style="animation-delay: 0.3s;">
-                        <!-- File Card 1 -->
                         <div class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_35px_rgba(11,19,43,0.1)] transition-all duration-300 group flex items-start gap-4">
                             <div class="w-12 h-12 rounded-xl bg-red-50 text-red-500 flex items-center justify-center text-2xl shrink-0 group-hover:scale-110 transition-transform">
                                 <i class="fas fa-file-pdf"></i>
@@ -404,7 +363,6 @@
                             </div>
                         </div>
 
-                        <!-- File Card 2 -->
                         <div class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_35px_rgba(11,19,43,0.1)] transition-all duration-300 group flex items-start gap-4">
                             <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-500 flex items-center justify-center text-2xl shrink-0 group-hover:scale-110 transition-transform">
                                 <i class="fas fa-file-word"></i>
@@ -418,7 +376,6 @@
                             </div>
                         </div>
 
-                        <!-- File Card 3 -->
                         <div class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_35px_rgba(11,19,43,0.1)] transition-all duration-300 group flex items-start gap-4">
                             <div class="w-12 h-12 rounded-xl bg-green-50 text-green-500 flex items-center justify-center text-2xl shrink-0 group-hover:scale-110 transition-transform">
                                 <i class="fas fa-file-excel"></i>
@@ -442,10 +399,8 @@
             </section>
         </div>
 
-        <!-- ================= PRESTASI PAGE ================= -->
         <div id="page-prestasi" class="page-view hidden">
             <section class="py-24 md:py-32 bg-slate-50 min-h-screen relative overflow-hidden">
-                <!-- Decorative BG -->
                 <div class="absolute top-0 right-0 w-full h-96 bg-ftnavy-900 -skew-y-3 transform origin-top-right -z-10"></div>
                 
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -456,7 +411,6 @@
                         <p class="text-slate-300 max-w-2xl mx-auto text-lg">Rekam jejak gemilang mahasiswa Fakultas Teknik UNSIKA dari berbagai program studi.</p>
                     </div>
 
-                    <!-- Dashboard Stats -->
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 animate-fade-in-up" style="animation-delay: 0.1s;">
                         <div class="bg-white rounded-3xl p-6 text-center shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-slate-100">
                             <div class="text-4xl font-extrabold text-ftnavy-900 mb-2">42</div>
@@ -476,7 +430,6 @@
                         </div>
                     </div>
 
-                    <!-- Filter Himpunan -->
                     <div class="flex flex-wrap justify-center gap-2 mb-10 animate-fade-in-up" style="animation-delay: 0.2s;">
                         <button class="px-4 py-1.5 rounded-full bg-ftnavy-900 text-white text-sm font-bold">Semua</button>
                         <button class="px-4 py-1.5 rounded-full bg-slate-200 text-slate-600 hover:bg-slate-300 text-sm font-bold transition-colors">HMS Unsika</button>
@@ -485,9 +438,7 @@
                         <button class="px-4 py-1.5 rounded-full bg-slate-200 text-slate-600 hover:bg-slate-300 text-sm font-bold transition-colors">HMTI FT Unsika</button>
                     </div>
 
-                    <!-- Timeline/Cards Prestasi -->
                     <div class="space-y-6 animate-fade-in-up" style="animation-delay: 0.3s;">
-                        <!-- Item 1 -->
                         <div class="bg-white rounded-3xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 group hover:shadow-[0_15px_40px_rgba(244,162,97,0.1)] transition-all">
                             <div class="w-24 h-24 rounded-full bg-gradient-to-br from-ftgold-400 to-ftgold-500 flex items-center justify-center text-white text-4xl shadow-lg shrink-0 group-hover:scale-110 transition-transform">
                                 <i class="fas fa-trophy"></i>
@@ -502,7 +453,6 @@
                             </div>
                         </div>
 
-                        <!-- Item 2 -->
                         <div class="bg-white rounded-3xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 group hover:shadow-[0_15px_40px_rgba(244,162,97,0.1)] transition-all">
                             <div class="w-24 h-24 rounded-full bg-gradient-to-br from-slate-300 to-slate-400 flex items-center justify-center text-white text-4xl shadow-lg shrink-0 group-hover:scale-110 transition-transform">
                                 <i class="fas fa-medal"></i>
@@ -521,10 +471,8 @@
             </section>
         </div>
 
-        <!-- ================= KONTAK PAGE ================= -->
         <div id="page-kontak" class="page-view hidden">
             <section class="py-24 md:py-32 bg-slate-100 min-h-screen flex flex-col justify-center relative overflow-hidden">
-                <!-- Decorative background -->
                 <div class="absolute inset-0 bg-ftnavy-900/5 backdrop-blur-3xl z-0"></div>
                 <div class="absolute top-0 right-0 w-96 h-96 bg-ftgold-500/10 rounded-full blur-3xl"></div>
                 
@@ -582,7 +530,6 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-ftnavy-900 border-t border-ftnavy-800 py-8 text-gray-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center text-sm">
@@ -592,54 +539,6 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Menu, Navbar Scroll & SPA Routing -->
-    <script>
-        // SPA Routing Logic
-        function navigateTo(pageId) {
-            // Sembunyikan semua section
-            const pages = document.querySelectorAll('.page-view');
-            pages.forEach(page => {
-                page.classList.add('hidden');
-                page.classList.remove('block');
-            });
-            
-            // Tampilkan section yang dituju
-            const target = document.getElementById(pageId);
-            if (target) {
-                target.classList.remove('hidden');
-                target.classList.add('block');
-            }
-            
-            // Scroll otomatis ke atas (di bawah navbar)
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            
-            // Tutup menu mobile jika sedang terbuka
-            document.getElementById('mobile-menu').classList.add('hidden');
-        }
-
-        // Mobile menu toggle
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
-        // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 10) {
-                navbar.classList.add('nav-scrolled');
-                navbar.classList.remove('py-4');
-                navbar.classList.add('py-2');
-            } else {
-                navbar.classList.remove('nav-scrolled');
-                navbar.classList.add('py-4');
-                navbar.classList.remove('py-2');
-            }
-        });
-    </script>
+    <script src="./js/app.js"></script>
 </body>
-<body class="no-select">
-<body class="select-none">
 </html>

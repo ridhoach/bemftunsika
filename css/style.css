@@ -1,0 +1,24 @@
+/* css/style.css */
+.hero-pattern {
+    background-color: #0B132B;
+    background-image: radial-gradient(circle at top right, rgba(58, 80, 107, 0.4), transparent 40%),
+                      radial-gradient(circle at bottom left, rgba(244, 162, 97, 0.15), transparent 40%),
+                      linear-gradient(rgba(11, 19, 43, 0.95), rgba(11, 19, 43, 0.95)), 
+                      url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjUwoRwTWCpTTKewU4SpQxA0VngsGqklixrzQSFhJ81FEpxAobfo0s-rasD_yLyT8sopyJSMPrR4uJJhPKAa9kH2LrrBcAB-eAvvUo7SNs4xJDwtZKEYQCB3jIbpqDRoi1KxiBntJ6BOhk7JNv2eWHaT0uRSTbq-NQe6ImnnyV8mkpS2SPZW4HX3cQqfU/s4000/WhatsApp%20Image%202024-11-21%20at%2012.08.45%20(2).jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.nav-scrolled {
+    background-color: rgba(11, 19, 43, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom scrollbar for modern feel */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #3A506B; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #1C2541; }
