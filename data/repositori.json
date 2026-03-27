@@ -1,0 +1,29 @@
+[
+    {
+        "judul": "Bank Soal Kalkulus II",
+        "kategori": "Teknik Sipil & Mesin",
+        "format": "PDF",
+        "ukuran": "2.4 MB",
+        "icon": "fa-file-pdf",
+        "warnaIcon": "text-red-500 bg-red-50",
+        "link": "#"
+    },
+    {
+        "judul": "Modul Mekanika Tanah",
+        "kategori": "Teknik Sipil",
+        "format": "DOCX",
+        "ukuran": "5.1 MB",
+        "icon": "fa-file-word",
+        "warnaIcon": "text-blue-500 bg-blue-50",
+        "link": "#"
+    },
+    {
+        "judul": "Data Kajian UKT 2026",
+        "kategori": "Kastrat BEM",
+        "format": "XLSX",
+        "ukuran": "1.2 MB",
+        "icon": "fa-file-excel",
+        "warnaIcon": "text-green-500 bg-green-50",
+        "link": "#"
+    }
+]
