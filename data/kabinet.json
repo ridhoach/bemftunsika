@@ -1,0 +1,105 @@
+[
+    {
+        "divisi": "Pengurus Inti BEM FT",
+        "icon": "fa-crown",
+        "anggota": [
+            { "nama": "Andika Pradipta", "jabatan": "Ketua Umum", "npm": "2310631150043" },
+            { "nama": "Davita Maheswari", "jabatan": "Wakil Ketua Umum", "npm": "2310631270004" },
+            { "nama": "Najla Rossiana Rabbani", "jabatan": "Sekretaris Umum", "npm": "2310631140102" },
+            { "nama": "Agustinus Davin Mahardikha", "jabatan": "Wakil Sekretaris Umum", "npm": "2310631160004" },
+            { "nama": "Khaalisa Afhona Ramlah", "jabatan": "Bendahara Umum", "npm": "2310631230013" },
+            { "nama": "Sesilia Larma Wati Ritonga", "jabatan": "Wakil Bendahara Umum", "npm": "2410631230066" }
+        ]
+    },
+    {
+        "divisi": "Quality Control",
+        "icon": "fa-clipboard-check",
+        "anggota": [
+            { "nama": "Ellva Maulina Bukhari", "jabatan": "Manager Quality Control", "npm": "2410631140014" },
+            { "nama": "Windi Nur Rizka", "jabatan": "Sekretaris Tim", "npm": "2410631140118" },
+            { "nama": "Naila Lestari", "jabatan": "Anggota Tim 1", "npm": "2410631140034" },
+            { "nama": "Divia Anjani Rahma", "jabatan": "Anggota Tim 2", "npm": "2410631140133" }
+        ]
+    },
+    {
+        "divisi": "Pengembangan Sumber Daya Mahasiswa",
+        "icon": "fa-users-cog",
+        "anggota": [
+            { "nama": "Naufal Akif Putra Dafani", "jabatan": "Ketua Bidang", "npm": "2410631150028" },
+            { "nama": "Nabila Riva Azhari", "jabatan": "Sekretaris Bidang", "npm": "2410631140098" },
+            { "nama": "Nurmala Hayati Azzahra", "jabatan": "Anggota Bidang", "npm": "2410631330021" },
+            { "nama": "Mulyadi", "jabatan": "Anggota Bidang", "npm": "2410631160127" },
+            { "nama": "Ardelia Nabilah Suhaeni", "jabatan": "Anggota Bidang", "npm": "2510631330013" }
+        ]
+    },
+    {
+        "divisi": "Penelitian dan Pengembangan",
+        "icon": "fa-microchip",
+        "anggota": [
+            { "nama": "Ridho Achmad Satrio", "jabatan": "Ketua Bidang", "npm": "2410631320026" },
+            { "nama": "Rita Oktafiyani", "jabatan": "Sekretaris Bidang", "npm": "2410631140110" },
+            { "nama": "Putri Aprellya", "jabatan": "Anggota Bidang", "npm": "2410631150029" },
+            { "nama": "Kevin Gading Setiawan", "jabatan": "Anggota Bidang", "npm": "2510631160017" }
+        ]
+    },
+    {
+        "divisi": "Media dan Relasi",
+        "icon": "fa-broadcast-tower",
+        "anggota": [
+            { "nama": "Agenie Aldilasafa", "jabatan": "Ketua Bidang", "npm": "2410631270002" },
+            { "nama": "Zahra Nur Janati", "jabatan": "Sekretaris Bidang", "npm": "2410631140120" },
+            { "nama": "Angellina Rosmaniar Hariyanto", "jabatan": "Anggota Bidang", "npm": "2410631140056" },
+            { "nama": "Laudya Chelsea Azhari", "jabatan": "Anggota Bidang", "npm": "2410631230031" }
+        ]
+    },
+    {
+        "divisi": "Kreativitas Mahasiswa",
+        "icon": "fa-lightbulb",
+        "anggota": [
+            { "nama": "Tata Dyah Ayu Suci Ramadani", "jabatan": "Ketua Bidang", "npm": "2410631320013" },
+            { "nama": "Meisya Nanda Putri Ahdiat", "jabatan": "Sekretaris Bidang", "npm": "2410631230009" },
+            { "nama": "Rafi Harsya Aidan", "jabatan": "Anggota Bidang", "npm": "2410631140105" },
+            { "nama": "Muhammad Rafi Alianom", "jabatan": "Anggota Bidang", "npm": "2410631320045" }
+        ]
+    },
+    {
+        "divisi": "Kewirausahaan",
+        "icon": "fa-store",
+        "anggota": [
+            { "nama": "Mais Nurjamal", "jabatan": "Ketua Bidang", "npm": "2410631160068" },
+            { "nama": "Muhamad Ridqi", "jabatan": "Sekretaris Bidang", "npm": "2410631150022" },
+            { "nama": "Azuhra Azzahra Fathurrohmah", "jabatan": "Anggota Bidang", "npm": "2410631140059" },
+            { "nama": "Melia Oktaviana", "jabatan": "Anggota Bidang", "npm": "2510631330024" }
+        ]
+    },
+    {
+        "divisi": "Advokasi dan Kesejahteraan Mahasiswa",
+        "icon": "fa-balance-scale",
+        "anggota": [
+            { "nama": "Jeni Lestari", "jabatan": "Ketua Bidang", "npm": "2410631140021" },
+            { "nama": "Fadhilah Firdausi Ahla", "jabatan": "Sekretaris Bidang", "npm": "2410631270007" },
+            { "nama": "Putri Ayu Amalia", "jabatan": "Anggota Bidang", "npm": "2510631330036" },
+            { "nama": "Melina Argianti", "jabatan": "Anggota Bidang", "npm": "2510631330025" }
+        ]
+    },
+    {
+        "divisi": "Sosial Masyarakat Lingkungan",
+        "icon": "fa-leaf",
+        "anggota": [
+            { "nama": "Naufal Zahran Qaniurizqi", "jabatan": "Ketua Bidang", "npm": "2410631270043" },
+            { "nama": "Neiza Putri Almayda", "jabatan": "Sekretaris Bidang", "npm": "2410631270044" },
+            { "nama": "Aulia Zahra Ar-rantisi", "jabatan": "Anggota Bidang", "npm": "2410631230003" },
+            { "nama": "Avni Vika Aviani", "jabatan": "Anggota Bidang", "npm": "2410631140058" },
+            { "nama": "Ratu Amalia Sholeha Andika Putri", "jabatan": "Anggota Bidang", "npm": "2410631140108" }
+        ]
+    },
+    {
+        "divisi": "Kajian dan Aksi Strategis",
+        "icon": "fa-bullhorn",
+        "anggota": [
+            { "nama": "Muhammad Faiz Chaidar", "jabatan": "Ketua Bidang", "npm": "2410631320044" },
+            { "nama": "Fauziyyah Nur Azizah Mulyadi", "jabatan": "Sekretaris Bidang", "npm": "2510631320028" },
+            { "nama": "Mirza Raissa Manggala", "jabatan": "Anggota Bidang", "npm": "2510631150053" }
+        ]
+    }
+]
