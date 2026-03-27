@@ -75,20 +75,20 @@
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 bg-transparent text-white py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center bg-ftnavy-900/40 backdrop-blur-md rounded-full px-6 py-3 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
-                <div class="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity duration-300" onclick="navigateTo('page-beranda')">
+                <a href="/home" class="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity duration-300">
                     <img src="./assets/logo-bem.png" alt="Logo BEM FT UNSIKA" class="w-10 h-10 object-contain drop-shadow-md">
                     <span class="font-bold text-xl tracking-tight">BEM FT UNSIKA <span class="text-ftgold-500">2026</span></span>
-                </div>
+                </a>
                 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex space-x-1">
-                    <button onclick="navigateTo('page-beranda')" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Beranda</button>
-                    <button onclick="navigateTo('page-tentang')" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Tentang</button>
-                    <button onclick="navigateTo('page-kabinet')" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Kabinet</button>
-                    <button onclick="navigateTo('page-program')" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Program</button>
-                    <button onclick="navigateTo('page-repositori')" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Repositori</button>
-                    <button onclick="navigateTo('page-prestasi')" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Prestasi</button>
-                    <button onclick="navigateTo('page-kontak')" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Kontak</button>
+                    <a href="/home" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Beranda</a>
+                    <a href="/tentang" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Tentang</a>
+                    <a href="/kabinet" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Kabinet</a>
+                    <a href="/program" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Program</a>
+                    <a href="/repositori" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Repositori</a>
+                    <a href="/prestasi" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Prestasi</a>
+                    <a href="/kontak" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Kontak</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -103,13 +103,13 @@
         <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden md:hidden absolute w-[calc(100%-2rem)] left-4 mt-4 bg-ftnavy-900/95 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 origin-top h-max max-h-[80vh] overflow-y-auto">
             <div class="px-4 py-6 space-y-1">
-                <button onclick="navigateTo('page-beranda')" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Beranda</button>
-                <button onclick="navigateTo('page-tentang')" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Tentang</button>
-                <button onclick="navigateTo('page-kabinet')" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Kabinet</button>
-                <button onclick="navigateTo('page-program')" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Program</button>
-                <button onclick="navigateTo('page-repositori')" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Repositori Akademik</button>
-                <button onclick="navigateTo('page-prestasi')" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Dashboard Prestasi</button>
-                <button onclick="navigateTo('page-kontak')" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Kontak</button>
+                <a href="/home" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Beranda</a>
+                <a href="/tentang" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Tentang</a>
+                <a href="/kabinet" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Kabinet</a>
+                <a href="/program" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Program</a>
+                <a href="/repositori" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Repositori Akademik</a>
+                <a href="/prestasi" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Dashboard Prestasi</a>
+                <a href="/kontak" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Kontak</a>
             </div>
         </div>
     </nav>
