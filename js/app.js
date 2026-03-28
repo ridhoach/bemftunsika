@@ -1,22 +1,37 @@
-/* js/app.js */
+// 1. SISTEM ROUTING (HASH ROUTING)
+// ==========================================
+function handleRouting() {
+    // Ambil ekor URL. Jika kosong, arahkan ke beranda
+    let hash = window.location.hash;
+    if (!hash) {
+        hash = '#beranda';
+    }
+    
+    // Ubah '#tentang' menjadi 'page-tentang'
+    const targetPageId = 'page-' + hash.substring(1);
 
-// Logika Routing SPA Sederhana
-function navigateTo(pageId) {
-    // Sembunyikan semua section
+    // Sembunyikan semua halaman
     const pages = document.querySelectorAll('.page-view');
     pages.forEach(page => {
         page.classList.add('hidden');
         page.classList.remove('block');
     });
-    
-    // Tampilkan section yang dituju
-    const target = document.getElementById(pageId);
-    if (target) {
-        target.classList.remove('hidden');
-        target.classList.add('block');
+
+    // Tampilkan halaman yang ditargetkan
+    const targetPage = document.getElementById(targetPageId);
+    if (targetPage) {
+        targetPage.classList.remove('hidden');
+        targetPage.classList.add('block');
+    } else {
+        // Fallback: Jika URL ngawur, paksa kembali ke beranda
+        const beranda = document.getElementById('page-beranda');
+        if (beranda) {
+            beranda.classList.remove('hidden');
+            beranda.classList.add('block');
+        }
     }
-    
-    // Scroll otomatis ke atas
+
+    // Scroll otomatis ke atas setiap pindah halaman
     window.scrollTo({ top: 0, behavior: 'smooth' });
     
     // Tutup menu mobile jika sedang terbuka
@@ -25,6 +40,9 @@ function navigateTo(pageId) {
         mobileMenu.classList.add('hidden');
     }
 }
+
+// Pasang pendengar perubahan URL
+window.addEventListener('hashchange', handleRouting);
 
 // Interaksi Toggle Menu Mobile
 const btn = document.getElementById('mobile-menu-btn');
@@ -116,6 +134,7 @@ async function loadKabinet() {
 
 // Eksekusi semua fungsi inisialisasi saat DOM selesai dimuat
 document.addEventListener('DOMContentLoaded', () => {
+    handleRouting();   
     loadRepositori();
     loadKabinet();
 });

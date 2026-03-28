@@ -54,18 +54,18 @@
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 bg-transparent text-white py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center bg-ftnavy-900/40 backdrop-blur-md rounded-full px-6 py-3 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
-                <a href="#" onclick="navigateTo('page-beranda'); return false;" class="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity duration-300">
+                <a href="#beranda" onclick="navigateTo('page-beranda'); return false;" class="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity duration-300">
                     <img src="./assets/logo-bem.png" alt="Logo BEM FT UNSIKA" class="w-10 h-10 object-contain drop-shadow-md">
                     <span class="font-bold text-xl tracking-tight">BEM FT UNSIKA <span class="text-ftgold-500">2026</span></span>
                 </a>
                 
                 <div class="hidden lg:flex space-x-1">
-                    <a href="#" onclick="navigateTo('page-beranda'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Beranda</a>
-                    <a href="#" onclick="navigateTo('page-tentang'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Tentang</a>
-                    <a href="#" onclick="navigateTo('page-kabinet'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Kabinet</a>
-                    <a href="#" onclick="navigateTo('page-program'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Program</a>
-                    <a href="#" onclick="navigateTo('page-repositori'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Repositori</a>
-                    <a href="#" onclick="navigateTo('page-prestasi'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Prestasi</a>
+                    <a href="#beranda" onclick="navigateTo('page-beranda'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Beranda</a>
+                    <a href="#tentang" onclick="navigateTo('page-tentang'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Tentang</a>
+                    <a href="#kabinet" onclick="navigateTo('page-kabinet'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Kabinet</a>
+                    <a href="#proker" onclick="navigateTo('page-program'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Program</a>
+                    <a href="#repositori" onclick="navigateTo('page-repositori'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Repositori</a>
+                    <a href="#prestasi" onclick="navigateTo('page-prestasi'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Prestasi</a>
                     <a href="#" onclick="navigateTo('page-kontak'); return false;" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-ftgold-400 transition-all duration-300 font-medium text-sm tracking-wide">Kontak</a>
                 </div>
 
@@ -79,13 +79,13 @@
         
         <div id="mobile-menu" class="hidden md:hidden absolute w-[calc(100%-2rem)] left-4 mt-4 bg-ftnavy-900/95 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 origin-top h-max max-h-[80vh] overflow-y-auto">
             <div class="px-4 py-6 space-y-1">
-                <a href="#" onclick="navigateTo('page-beranda'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Beranda</a>
-                <a href="#" onclick="navigateTo('page-tentang'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Tentang</a>
-                <a href="#" onclick="navigateTo('page-kabinet'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Kabinet</a>
-                <a href="#" onclick="navigateTo('page-program'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Program</a>
-                <a href="#" onclick="navigateTo('page-repositori'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Repositori Akademik</a>
-                <a href="#" onclick="navigateTo('page-prestasi'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Dashboard Prestasi</a>
-                <a href="#" onclick="navigateTo('page-kontak'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Kontak</a>
+                <a href="#beranda" onclick="navigateTo('page-beranda'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Beranda</a>
+                <a href="#tentang" onclick="navigateTo('page-tentang'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Tentang</a>
+                <a href="#kabinet" onclick="navigateTo('page-kabinet'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Kabinet</a>
+                <a href="#proker" onclick="navigateTo('page-program'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Program</a>
+                <a href="#repositori" onclick="navigateTo('page-repositori'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Repositori Akademik</a>
+                <a href="#prestasi" onclick="navigateTo('page-prestasi'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Dashboard Prestasi</a>
+                <a href="#kontak" onclick="navigateTo('page-kontak'); return false;" class="block w-full text-left px-4 py-3 text-base font-medium hover:bg-white/10 hover:text-ftgold-500 rounded-2xl transition-all">Kontak</a>
             </div>
         </div>
     </nav>
@@ -112,10 +112,10 @@
                             [Can be edited: BEM FT Unsika 2026 hadir sebagai katalisator pergerakan mahasiswa yang progresif, adaptif, dan berdampak nyata].
                         </p>
                         <div class="flex flex-col sm:flex-row gap-5 justify-center">
-                            <a href="#" onclick="navigateTo('page-tentang'); return false;" class="px-8 py-4 bg-gradient-to-r from-ftgold-500 to-ftgold-400 text-ftnavy-900 font-bold rounded-full hover:scale-105 transition-all duration-300 shadow-[0_10px_40px_-10px_rgba(244,162,97,0.8)] text-center">
+                            <a href="#tentang" onclick="navigateTo('page-tentang'); return false;" class="px-8 py-4 bg-gradient-to-r from-ftgold-500 to-ftgold-400 text-ftnavy-900 font-bold rounded-full hover:scale-105 transition-all duration-300 shadow-[0_10px_40px_-10px_rgba(244,162,97,0.8)] text-center">
                                 Visi & Misi
                             </a>
-                            <a href="#" onclick="navigateTo('page-program'); return false;" class="px-8 py-4 bg-white/5 backdrop-blur-md border border-white/20 text-white font-bold rounded-full hover:bg-white/10 hover:border-white/40 hover:scale-105 transition-all duration-300 text-center">
+                            <a href="#program" onclick="navigateTo('page-program'); return false;" class="px-8 py-4 bg-white/5 backdrop-blur-md border border-white/20 text-white font-bold rounded-full hover:bg-white/10 hover:border-white/40 hover:scale-105 transition-all duration-300 text-center">
                                 Program Kerja
                             </a>
                         </div>
