@@ -25,5 +25,6 @@
         "icon": "fa-file-excel",
         "warnaIcon": "text-green-500 bg-green-50",
         "link": "#"
-    }
+    },
+    {}
 ]
